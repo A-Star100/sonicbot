@@ -7,3 +7,6 @@ This bot is fast compared to the others and is skilled at basic movements such a
 
 ## gentlebot.py
 This bot is slower and his movements are more calculated compared to speedybot, but he has the same moveset.
+
+> [!WARNING]
+> In order for this bot to work (especially on macOS), you **must** allow Terminal to control your computer. Why? Otherwise, the bot cannot send inputs. It's completely safe. If you're worried, check the code.
