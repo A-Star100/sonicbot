@@ -13,9 +13,6 @@ This bot is fast compared to the others and is skilled at basic movements such a
 ## gentlebot.py
 This bot is slower and his movements are more calculated compared to speedybot, but he has the same moveset.
 
-> [!WARNING]
-> In order for this bot to work (especially on macOS), you **must** allow Terminal to control your computer. Why? Otherwise, the bot cannot send inputs. It's completely safe. If you're worried, check the code.
-
 ## FAQ
 
 1. Is this bot cross-platform?
@@ -23,3 +20,7 @@ This bot is slower and his movements are more calculated compared to speedybot, 
 
 2. What are the `['key'] * X` things?
    That is the key weighing system. Using it, certain keys will be pressed more than others via `random.choice()` in Python. Adjusting these values adjust the bias level per key.
+
+3. The bot doesn't work.
+   > [!WARNING]
+   > In order for this bot to work (especially on macOS), you **must** allow Terminal to control your computer. Why? Otherwise, the bot cannot send inputs. It's completely safe. If you're             worried, check the code.
