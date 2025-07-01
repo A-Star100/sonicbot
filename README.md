@@ -10,6 +10,9 @@ pip install -r requirements.txt
 ## speedybot.py (Recommended for Sonic games)
 This bot is fast compared to the others and is skilled at basic movements such as the spindash, and extra combos.
 
+## speedybot-gui.py
+The same as the original **speedybot.py** but with a user-friendly GUI in PyQT 5.
+
 ## gentlebot.py
 This bot is slower and his movements are more calculated compared to speedybot, but he has the same moveset.
 
