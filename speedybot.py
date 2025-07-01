@@ -66,16 +66,16 @@ def goUpAndLeft():
     time.sleep(2)
     pyautogui.keyDown('up')
     pyautogui.keyUp('left')
-    time.sleep(1)
+    time.sleep(0.6)
     pyautogui.keyDown('left')
 
 def goUpAndRight():
-    print("Going very left")
+    print("Going very right")
     pyautogui.keyUp('up')
     time.sleep(2)
     pyautogui.keyDown('up')
     pyautogui.keyUp('right')
-    time.sleep(1)
+    time.sleep(0.6)
     pyautogui.keyDown('right')
 
 def rollDownSlope():
