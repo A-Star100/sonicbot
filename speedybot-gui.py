@@ -94,7 +94,7 @@ class BotThread(QThread):
 class BotGUI(QWidget):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Sonic GT Bot")
+        self.setWindowTitle("SonicBot")
         self.setFixedSize(450, 320)
 
         self.app_name = None
