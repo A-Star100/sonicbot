@@ -22,5 +22,4 @@ This bot is slower and his movements are more calculated compared to speedybot, 
    That is the key weighing system. Using it, certain keys will be pressed more than others via `random.choice()` in Python. Adjusting these values adjust the bias level per key.
 
 3. The bot doesn't work.
-   > [!WARNING]
-   > In order for this bot to work (especially on macOS), you **must** allow Terminal to control your computer. Why? Otherwise, the bot cannot send inputs. It's completely safe. If you're             worried, check the code.
+   In order for this bot to work (especially on macOS), you **must** allow Terminal to control your computer. Why? Otherwise, the bot cannot send inputs. It's completely safe. If you're             worried, check the code.
