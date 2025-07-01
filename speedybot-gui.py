@@ -96,7 +96,7 @@ class BotThread(QThread):
         pyautogui.keyUp('space')
         pyautogui.keyDown('t')
         # Randomly mash directional keys like tricks
-        trick_keys = ['left', 'right', 'up', 'down']
+        trick_keys = ['ctrl', 'shift', 'space', 'e']
         for _ in range(random.randint(2, 4)):
             key = random.choice(trick_keys)
             pyautogui.keyDown(key)
@@ -104,6 +104,7 @@ class BotThread(QThread):
             pyautogui.keyUp(key)
 
         pyautogui.keyUp('t')
+
 
 
 # --- GUI Window ---
