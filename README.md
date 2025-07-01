@@ -25,7 +25,7 @@ His sole purpose is for memes. He can only go forward and (occasionally) jump. G
 
 2. What are the `['key'] * X` things?
    
-   That is the key weighing system. Using it, certain keys will be pressed more than others via `random.choice()` in Python (because when you multiply an array, it is basically copied, so `['up'] * 4` means `['up'] + ['up'] + ['up'] + ['up']` in the code. Adjusting these values adjust the bias level per key. Not specifying     one means no bias for that key.
+   That is the key weighing system. Using it, certain keys will be pressed more than others via `random.choice()` in Python (because when you multiply an array, it is basically copied, so `['up'] * 4` means `['up'] + ['up'] + ['up'] + ['up']` in the code). Adjusting these values adjust the bias level per key. Not specifying     one means no bias for that key.
 
 4. The bot doesn't work.
    
