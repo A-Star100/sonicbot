@@ -98,8 +98,9 @@ def tricksss():
     trick_keys = ['left', 'right', 'up', 'down']
     for _ in range(random.randint(2, 4)):
         key = random.choice(trick_keys)
-        pyautogui.press(key)
-        time.sleep(0.1)
+        pyautogui.keyDown(key)
+        time.sleep(1)
+        pyautogui.keyUp(key)
 
     pyautogui.keyUp('t')
 
