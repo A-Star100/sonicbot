@@ -7,7 +7,7 @@ Install dependencies via:
 pip install -r requirements.txt
 ```
 
-## speedybot.py
+## speedybot.py (Recommended for Sonic games)
 This bot is fast compared to the others and is skilled at basic movements such as the spindash, and extra combos.
 
 ## gentlebot.py
