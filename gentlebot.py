@@ -98,7 +98,7 @@ def tricksss():
     pyautogui.keyUp('space')
     pyautogui.keyDown('z')
     # Randomly mash directional keys like tricks
-    trick_keys = ['ctrl', 'shift', 'space', 'e']
+    trick_keys = ['ctrl', 'shift', 'space', 'b']
     for _ in range(random.randint(2, 4)):
         key = random.choice(trick_keys)
         pyautogui.keyDown(key)
