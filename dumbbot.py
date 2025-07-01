@@ -7,11 +7,11 @@ import threading
 stop_bot = False
 
 app_name = "Sonic GT"
-os.system(f'osascript -e \'tell application "{app_name}" to activate\'')
+# For macOS: os.system(f'osascript -e \'tell application "{app_name}" to activate\'')
 
 def wait_for_enter():
     global stop_bot
-    input("Press ENTER to stop DumbBot...\n")
+    input("Press ENTER to stop me\n")
     stop_bot = True
 
 threading.Thread(target=wait_for_enter, daemon=True).start()
