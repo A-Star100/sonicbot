@@ -16,10 +16,13 @@ This bot is slower and his movements are more calculated compared to speedybot, 
 ## FAQ
 
 1. Is this bot cross-platform?
+   
    PyAutoGUI, the library used for sending keyboard inputs, is cross platform, so yes, the bots will work on any platform that supports keyboard usage.
 
 2. What are the `['key'] * X` things?
+   
    That is the key weighing system. Using it, certain keys will be pressed more than others via `random.choice()` in Python. Adjusting these values adjust the bias level per key.
 
 3. The bot doesn't work.
+   
    In order for this bot to work (especially on macOS), you **must** allow Terminal to control your computer. Why? Otherwise, the bot cannot send inputs. It's completely safe. If you're             worried, check the code.
