@@ -105,6 +105,39 @@ class BotThread(QThread):
 
         pyautogui.keyUp('z')
 
+    def goForward(self):
+        self.update_status.emit("Going very forward")
+        pyautogui.keyUp('up')
+        time.sleep(3)
+        pyautogui.keyDown('up')
+
+    def goUpAndLeft(self):
+        self.update_status.emit("Going very left")
+        pyautogui.keyUp('up')
+        time.sleep(2)
+        pyautogui.keyDown('up')
+        pyautogui.keyUp('left')
+        time.sleep(0.6)
+        pyautogui.keyDown('left')
+
+    def goUpAndRight(self):
+        self.update_status.emit("Going very right")
+        pyautogui.keyUp('up')
+        time.sleep(2)
+        pyautogui.keyDown('up')
+        pyautogui.keyUp('right')
+        time.sleep(0.6)
+        pyautogui.keyDown('right')
+
+    def rollDownSlope(self):
+        self.update_status.emit("Rolling down slope")
+        pyautogui.keyUp('up')
+        time.sleep(0.1)
+        pyautogui.keyUp('shift')
+        time.sleep(3.5)
+        pyautogui.keyDown('shift')
+        pyautogui.keyDown('up')
+    
 
 
 # --- GUI Window ---
