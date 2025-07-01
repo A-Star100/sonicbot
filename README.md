@@ -29,4 +29,4 @@ His sole purpose is for memes. He can only go forward and (occasionally) jump. G
 
 3. The bot doesn't work.
    
-   In order for this bot to work (especially on macOS), you **must** allow Terminal (or the app running the script) to control your computer. Why? Otherwise, the bot cannot send inputs. It's        completely safe. If you're worried, check the code.
+   In order for this bot to work (especially on macOS), you **must** either run as admin (Windows) or allow Terminal (or the app running the script) to control your computer (macOS). Why?           Otherwise, the bot cannot send inputs. It's completely safe. If you're worried, check the code.
