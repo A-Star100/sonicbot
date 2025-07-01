@@ -88,8 +88,24 @@ def rollDownSlope():
     pyautogui.keyDown('up')
 
 
+def tricksss():
+    print("TRICK TIME!")
+    pyautogui.keyDown('space')
+    time.sleep(0.4)
+    pyautogui.keyUp('space')
+    pyautogui.keyDown('t')
+    # Randomly mash directional keys like tricks
+    trick_keys = ['left', 'right', 'up', 'down']
+    for _ in range(random.randint(2, 4)):
+        key = random.choice(trick_keys)
+        pyautogui.press(key)
+        time.sleep(0.1)
+
+    pyautogui.keyUp('t')
+
+
 # Add more moves if needed
-moveset = [spindash, bounce, homingAttack, lightSpeedDash, dropDash, goForward, goUpAndLeft, goUpAndRight, rollDownSlope]
+moveset = [spindash, bounce, homingAttack, lightSpeedDash, dropDash, goForward, goUpAndLeft, goUpAndRight, rollDownSlope, tricksss]
 
 def wait_for_enter():
     global stop_bot
