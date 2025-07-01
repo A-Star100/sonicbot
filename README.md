@@ -21,7 +21,7 @@ His sole purpose is for memes. He can only go forward and (occasionally) jump. G
 
 1. Is this bot cross-platform?
    
-   PyAutoGUI, the library used for sending keyboard inputs, is cross platform, so yes, the bots will work on any platform that supports keyboard usage.
+   PyAutoGUI, the library used for sending keyboard inputs, is cross platform, so yes, the bots will work on any platform that supports keyboard usage & Python (Windows, macOS, Linux, and more).
 
 2. What are the `['key'] * X` things?
    
