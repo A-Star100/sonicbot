@@ -21,12 +21,12 @@ class BotThread(QThread):
         self.app_name = app_name
 
     def run(self):
-        # For macOS: os.system(f'osascript -e \'tell application "{self.app_name}" to activate\'')
+        # for macOS: os.system(f'osascript -e \'tell application "{self.app_name}" to activate\'')
         self.update_status.emit("Waiting 5 seconds... Get ready!")
         time.sleep(5)
 
         keys = ['left'] * 2 + ['right'] * 2 + ['up'] * 5 + ['down'] * 2 + ['space'] * 3 + ['shift'] * 3
-        moveset = [self.spindash, self.bounce, self.homingAttack, self.lightSpeedDash, self.dropDash]
+        moveset = [self.spindash, self.bounce, self.homingAttack, self.lightSpeedDash, self.dropDash, self.tricksss]
 
         self.update_status.emit("Bot started!")
 
@@ -88,6 +88,22 @@ class BotThread(QThread):
         pyautogui.keyDown('f')
         time.sleep(0.2)
         pyautogui.keyUp('f')
+
+    def tricksss():
+        print("TRICK TIME!")
+        pyautogui.keyDown('space')
+        time.sleep(0.4)
+        pyautogui.keyUp('space')
+        pyautogui.keyDown('t')
+        # Randomly mash directional keys like tricks
+        trick_keys = ['left', 'right', 'up', 'down']
+        for _ in range(random.randint(2, 4)):
+            key = random.choice(trick_keys)
+            pyautogui.keyDown(key)
+            time.sleep(1)
+            pyautogui.keyUp(key)
+
+        pyautogui.keyUp('t')
 
 
 # --- GUI Window ---
