@@ -13,6 +13,10 @@ This bot is fast compared to the others and is skilled at basic movements such a
 ## gentlebot.py
 This bot is slower and his movements are more calculated compared to speedybot, but he has the same moveset.
 
+## dumbbot.py
+His sole purpose is for memes. He can only go forward and (occasionally) jump. Good luck with him.
+
+
 ## FAQ
 
 1. Is this bot cross-platform?
