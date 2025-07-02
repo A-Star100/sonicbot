@@ -8,7 +8,7 @@ pip install -r requirements.txt
 ```
 
 ## smartbot.py (Recommended for Sonic games)
-This formidable bot uses even more decision making, taking its chances and based on its decision, deciding which path to take next, all with smart cooldowns being the cherry on top. He's by far the best at navigating levels and pathways compared to the others, but every bot excels in one way or another.
+This formidable bot uses even more decision making, taking his chances and based on his decision, deciding which path to take next, all with smart cooldowns being the cherry on top. He's by far the best at navigating levels and pathways compared to the others, but every bot excels in one way or another.
 
 ## speedybot.py (Also recommended for Sonic games)
 This bot is fast compared to the others (except smartbot) and is skilled at basic movements such as the spindash, and extra combos.
