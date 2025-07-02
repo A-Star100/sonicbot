@@ -69,22 +69,6 @@ def goUpAndLeft():
     time.sleep(0.6)
     pyautogui.keyDown('left')
 
-def uTurn():
-    print("Performing U-turn")
-    
-    # Release forward key
-    pyautogui.keyUp('up')
-    
-    # Simulate slight turn prep
-    pyautogui.keyDown('left')
-    time.sleep(0.3)
-    pyautogui.keyUp('left')
-
-    # Turn around and go full speed in opposite direction
-    pyautogui.keyDown('down')
-    time.sleep(1.0)
-    pyautogui.keyUp('down')
-
 
 def goUpAndRight():
     print("Going very right")
@@ -122,7 +106,7 @@ def tricksss():
 
 
 # Add more moves if needed 
-moveset = [spindash, bounce, homingAttack, lightSpeedDash, dropDash, goForward, goUpAndLeft, goUpAndRight, rollDownSlope, tricksss, uTurn]
+moveset = [spindash, bounce, homingAttack, lightSpeedDash, dropDash, goForward, goUpAndLeft, goUpAndRight, rollDownSlope, tricksss]
 
 def wait_for_enter():
     global stop_bot
