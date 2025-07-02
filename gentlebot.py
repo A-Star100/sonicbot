@@ -22,6 +22,23 @@ def spindash():
     time.sleep(0.6)  # Hold longer
     pyautogui.keyUp('shift')  # Don't forget to release
 
+def uTurn():
+    print("Performing U-turn")
+    
+    # Release forward key
+    pyautogui.keyUp('up')
+    
+    # Simulate slight turn prep
+    pyautogui.keyDown('left')
+    time.sleep(0.6)
+    pyautogui.keyUp('left')
+
+    # Turn around and go full speed in opposite direction
+    pyautogui.keyDown('down')
+    time.sleep(0.8)
+    pyautogui.keyUp('down')
+
+
 def bounce():
     print("Performing Bounce!")
     pyautogui.keyDown('space')
@@ -111,7 +128,7 @@ def tricksss():
 
 
 # Add more moves if needed
-moveset = [spindash, bounce, homingAttack, lightSpeedDash, dropDash, goForward, goUpAndLeft, goUpAndRight, rollDownSlope, tricksss]
+moveset = [spindash, bounce, homingAttack, lightSpeedDash, dropDash, goForward, goUpAndLeft, goUpAndRight, rollDownSlope, tricksss, uTurn]
 
 def wait_for_enter():
     global stop_bot
