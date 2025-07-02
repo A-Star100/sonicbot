@@ -5,7 +5,7 @@ import time
 import threading
 
 app_name = "Sonic GT"
-# For macOS: os.system(f'osascript -e \'tell application "{app_name}" to activate\'')
+# for macOS: os.system(f'osascript -e \'tell application "{app_name}" to activate\'')
 
 print("Waiting 10 seconds... Get ready!")
 time.sleep(10)
@@ -21,22 +21,6 @@ def spindash():
     pyautogui.keyDown('shift')
     time.sleep(0.6)  # Hold longer
     pyautogui.keyUp('shift')  # Don't forget to release
-
-def uTurn():
-    print("Performing U-turn")
-    
-    # Release forward key
-    pyautogui.keyUp('up')
-    
-    # Simulate slight turn prep
-    pyautogui.keyDown('left')
-    time.sleep(0.6)
-    pyautogui.keyUp('left')
-
-    # Turn around and go full speed in opposite direction
-    pyautogui.keyDown('down')
-    time.sleep(0.8)
-    pyautogui.keyUp('down')
 
 
 def bounce():
@@ -128,7 +112,7 @@ def tricksss():
 
 
 # Add more moves if needed
-moveset = [spindash, bounce, homingAttack, lightSpeedDash, dropDash, goForward, goUpAndLeft, goUpAndRight, rollDownSlope, tricksss, uTurn]
+moveset = [spindash, bounce, homingAttack, lightSpeedDash, dropDash, goForward, goUpAndLeft, goUpAndRight, rollDownSlope, tricksss]
 
 def wait_for_enter():
     global stop_bot
