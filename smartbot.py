@@ -3,10 +3,11 @@ import pyautogui
 import random
 import time
 import threading
-from datetime import datetime
 
 app_name = "Sonic GT"
 # for macOS: os.system(f'osascript -e \'tell application "{app_name}" to activate\'')
+
+pyautogui.FAILSAFE = False # disable failsafe as smartbot sends way more inputs which can trigger a false exception in PyAutoGui failsafe when exiting game
 
 print("Waiting 5 seconds... Get ready!")
 time.sleep(5)
