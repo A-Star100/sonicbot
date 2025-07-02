@@ -19,6 +19,9 @@ This bot is slower and his movements are more calculated compared to speedybot, 
 ## dumbbot.py
 His sole purpose is for memes. He can only go forward and (occasionally) jump. Good luck with him.
 
+## 2dbot.py
+A completely different bot optimized for 2D games such as Sonic Before The Sequel and more.
+
 
 ## FAQ
 
