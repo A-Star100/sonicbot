@@ -6,7 +6,7 @@ import threading
 stop_bot = False
 
 # Basic movement keys for 2D Sonic
-keys = ['right'] * 5 + ['space'] * 3 + ['down'] + ['shift']
+keys = ['right'] * 5 + ['z'] * 3 + ['down'] + ['shift']
 
 def spindash():
     print("Performing Spindash (down + shift)")
