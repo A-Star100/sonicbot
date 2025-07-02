@@ -6,7 +6,7 @@ import threading
 from datetime import datetime
 
 app_name = "Sonic GT"
-os.system(f'osascript -e \'tell application "{app_name}" to activate\'')
+# for macOS: os.system(f'osascript -e \'tell application "{app_name}" to activate\'')
 
 print("Waiting 5 seconds... Get ready!")
 time.sleep(5)
