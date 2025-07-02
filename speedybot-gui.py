@@ -21,12 +21,12 @@ class BotThread(QThread):
         self.app_name = app_name
 
     def run(self):
-        # For macOS: os.system(f'osascript -e \'tell application "{self.app_name}" to activate\'')
+        # for macOS: os.system(f'osascript -e \'tell application "{self.app_name}" to activate\'')
         self.update_status.emit("Waiting 5 seconds... Get ready!")
         time.sleep(5)
 
         keys = ['left'] * 2 + ['right'] * 2 + ['up'] * 5 + ['down'] * 2 + ['space'] * 3 + ['shift'] * 3
-        moveset = [self.spindash, self.bounce, self.homingAttack, self.lightSpeedDash, self.dropDash, self.tricksss, self.uturn]
+        moveset = [self.spindash, self.bounce, self.homingAttack, self.lightSpeedDash, self.dropDash, self.tricksss, self.uTurn]
 
         self.update_status.emit("Bot started!")
 
