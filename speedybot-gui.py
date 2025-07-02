@@ -21,12 +21,12 @@ class BotThread(QThread):
         self.app_name = app_name
 
     def run(self):
-        # for macOS: os.system(f'osascript -e \'tell application "{self.app_name}" to activate\'')
+        os.system(f'osascript -e \'tell application "{self.app_name}" to activate\'')
         self.update_status.emit("Waiting 5 seconds... Get ready!")
         time.sleep(5)
 
         keys = ['left'] * 2 + ['right'] * 2 + ['up'] * 5 + ['down'] * 2 + ['space'] * 3 + ['shift'] * 3
-        moveset = [self.spindash, self.bounce, self.homingAttack, self.lightSpeedDash, self.dropDash, self.tricksss, self.uTurn]
+        moveset = [self.spindash, self.bounce, self.homingAttack, self.lightSpeedDash, self.dropDash, self.tricksss]
 
         self.update_status.emit("Bot started!")
 
@@ -137,23 +137,6 @@ class BotThread(QThread):
         time.sleep(3.5)
         pyautogui.keyDown('shift')
         pyautogui.keyDown('up')
-
-    
-    def uTurn(self):
-        self.update_status.emit("Taking a u-turn")
-    
-        # Release forward key
-        pyautogui.keyUp('up')
-    
-        # Simulate slight turn prep
-        pyautogui.keyDown('left')
-        time.sleep(0.3)
-        pyautogui.keyUp('left')
-
-        # Turn around and go full speed in opposite direction
-        pyautogui.keyDown('down')
-        time.sleep(1.0)
-        pyautogui.keyUp('down')
     
 
 
