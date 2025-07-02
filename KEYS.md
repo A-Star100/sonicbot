@@ -11,3 +11,6 @@
 ## Why is it mapped this way?
 Due to the quirks of macOS, and our commitment to cross platform, we do this to avoid macOS issues. For example, if you press D a lot on macOS, it takes you out of the game and uses Dictation, which is
 NOT something you would want in a game, and the original E key for stomping meant repetitive prompts to use the emojis. As for the trick system remapping, that was just to avoid further random issues.
+
+## What about Sonic BTS?
+2dbot.py uses the stock key mapping that comes with BTS, so you don't have to worry over there.
