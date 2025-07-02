@@ -35,4 +35,4 @@ A completely different bot optimized for 2D games such as Sonic Before The Seque
 
 4. The bot doesn't work.
    
-   In order for this bot to work (especially on macOS), you **must** either run as admin (Windows) or allow Terminal (or the app running the script) to control your computer (macOS). Why?           Otherwise, the bot cannot send inputs, or **you haven't mapped the keys correctly**. It's completely safe. If you're worried, check the code.
+   In order for this bot to work (especially on macOS), you **must** either run as admin (Windows) or allow Terminal (or the app running the script) to control your computer (macOS). Why?           Otherwise, the bot cannot send inputs, or **[you haven't mapped the keys correctly](https://github.com/A-Star100/sonicbot/blob/main/KEYS.md)**. It's completely safe. If you're worried, check the code.
